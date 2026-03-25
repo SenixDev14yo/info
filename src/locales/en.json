@@ -1,0 +1,65 @@
+{
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contacts"
+  },
+  "hero": {
+    "title": "Creating Websites and Bots",
+    "subtitle": "Developing modern web applications and Telegram bots with user-friendly interfaces and well-thought logic",
+    "cta": "Order Project",
+    "viewPortfolio": "View Works"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "filter": {
+      "all": "All",
+      "sites": "Websites",
+      "bots": "Bots",
+      "design": "Design"
+    },
+    "viewProject": "View Project"
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Read more",
+    "search": "Search articles...",
+    "noResults": "No articles found"
+  },
+  "about": {
+    "title": "About Me",
+    "bio": "I'm a frontend developer with experience in creating modern web applications. I specialize in React, Node.js and Telegram bot development. I help businesses automate processes and improve customer interactions.",
+    "skills": "Skills",
+    "contact": "Contact Me"
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Have a project? Let's discuss the details",
+    "form": {
+      "name": "Your name",
+      "email": "Email",
+      "type": "Project type",
+      "typeOptions": {
+        "website": "Website",
+        "bot": "Telegram Bot",
+        "design": "Design",
+        "other": "Other"
+      },
+      "message": "Message",
+      "submit": "Send Request",
+      "sending": "Sending...",
+      "success": "Request sent! I'll contact you soon.",
+      "error": "Send error. Try again later."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "language": {
+    "ru": "RU",
+    "uz": "UZ",
+    "en": "EN"
+  }
+}
