@@ -26,8 +26,8 @@ const Contact = () => {
     try {
       const message = `📩 *Новая заявка*\n\n👤 Имя: ${formData.name}\n📧 Email: ${formData.email}\n🎯 Тип: ${formData.type}\n💬 Сообщение: ${formData.message}`;
       
-      const botToken = 'YOUR_BOT_TOKEN';
-      const chatId = 'YOUR_CHAT_ID';
+      const botToken = '8252274161:AAGgK4angtBTy5Oqh0r2N5AKwUYPHX3_uYw';
+      const chatId = '719579828';
       
       const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
         method: 'POST',
