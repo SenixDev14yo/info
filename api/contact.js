@@ -1,10 +1,3 @@
-import cors from 'cors';
-
-const corsMiddleware = cors();
-
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8252274161:AAEvCbtMkn5WaOb3eLYpGoTmTydyFKuo18Q';
-const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '719579828';
-
 export default async function handler(req, res) {
   if (req.method === 'OPTIONS') {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -27,6 +20,9 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Name and message are required' });
   }
 
+  const TELEGRAM_BOT_TOKEN = '8252274161:AAEvCbtMkn5WaOb3eLYpGoTmTydyFKuo18Q';
+  const TELEGRAM_CHAT_ID = '719579828';
+
   const langLabels = {
     ru: 'Новая заявка',
     uz: 'Yangi ariza',
@@ -48,16 +44,17 @@ export default async function handler(req, res) {
       })
     });
 
+    const data = await response.json();
+    
     if (response.ok) {
-      console.log('Message sent to Telegram:', { name, message, language });
+      console.log('Message sent:', data);
       res.json({ success: true, message: 'Message sent successfully' });
     } else {
-      const errorText = await response.text();
-      console.error('Telegram API error:', errorText);
-      res.status(500).json({ error: 'Failed to send message to Telegram' });
+      console.error('Telegram error:', data);
+      res.status(500).json({ error: 'Telegram API error', details: data });
     }
   } catch (error) {
-    console.error('Error sending message:', error);
-    res.status(500).json({ error: 'Internal server error' });
+    console.error('Error:', error);
+    res.status(500).json({ error: 'Internal server error', details: error.message });
   }
 }
