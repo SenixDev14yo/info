@@ -57,9 +57,7 @@ export default async function handler(req, res) {
   try {
     const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: TELEGRAM_CHAT_ID,
         text: messageText,
@@ -70,14 +68,11 @@ export default async function handler(req, res) {
     const data = await response.json();
     
     if (response.ok) {
-      console.log('Message sent:', data);
       res.json({ success: true, message: 'Message sent successfully' });
     } else {
-      console.error('Telegram error:', data);
       res.status(500).json({ error: 'Telegram API error', details: data });
     }
   } catch (error) {
-    console.error('Error:', error);
     res.status(500).json({ error: 'Internal server error', details: error.message });
   }
 }
