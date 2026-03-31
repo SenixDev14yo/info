@@ -42,7 +42,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="avatar">
-                <div className="placeholder-avatar">👨‍💻</div>
+                <img src="/icon.jpg" alt="Senix" />
               </div>
               <div className="social-links-about">
                 {socialLinks.map((social, index) => (
