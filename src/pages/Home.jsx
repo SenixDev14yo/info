@@ -61,13 +61,13 @@ const Home = () => {
               {t('hero.viewPortfolio')}
             </Link>
           </motion.div>
-
-          <motion.div className="scroll-indicator" variants={itemVariants}>
-            <div className="mouse">
-              <div className="wheel"></div>
-            </div>
-          </motion.div>
         </motion.div>
+
+        <div className="scroll-indicator">
+          <div className="mouse">
+            <div className="wheel"></div>
+          </div>
+        </div>
       </section>
 
       <section className="services-section">
