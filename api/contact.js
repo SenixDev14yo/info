@@ -1,3 +1,19 @@
+const escapeHtml = (str) => {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+};
+
+const escapeMarkdown = (str) => {
+  if (!str) return '';
+  return String(str)
+    .replace(/([_*[\]()~`>#+\-=|{}.!])/g, '\\$1');
+};
+
 export default async function handler(req, res) {
   if (req.method === 'OPTIONS') {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -20,8 +36,15 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Name and message are required' });
   }
 
+  if (name.length > 100 || message.length > 2000) {
+    return res.status(400).json({ error: 'Input too long' });
+  }
+
   const TELEGRAM_BOT_TOKEN = '8252274161:AAEvCbtMkn5WaOb3eLYpGoTmTydyFKuo18Q';
   const TELEGRAM_CHAT_ID = '719579828';
+
+  const safeName = escapeMarkdown(escapeHtml(name));
+  const safeMessage = escapeMarkdown(escapeHtml(message));
 
   const langLabels = {
     ru: 'Новая заявка',
@@ -29,7 +52,7 @@ export default async function handler(req, res) {
     en: 'New Contact Request'
   };
 
-  const messageText = `📩 *${langLabels[language] || 'New Contact Request'}*\n\n👤 *Name:* ${name}\n💬 *Message:* ${message}`;
+  const messageText = `📩 *${langLabels[language] || 'New Contact Request'}*\n\n👤 *Name:* ${safeName}\n💬 *Message:* ${safeMessage}`;
 
   try {
     const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
