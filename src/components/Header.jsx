@@ -15,7 +15,7 @@ const Header = () => {
   const navItems = [
     { key: 'home', path: '/' },
     { key: 'portfolio', path: '/portfolio' },
-    { key: 'blog', path: '/blog' },
+    { key: 'services', path: '/services' },
     { key: 'about', path: '/about' },
     { key: 'contact', path: '/contact' }
   ];
@@ -26,7 +26,7 @@ const Header = () => {
     <header className="header">
       <div className="container header-content">
         <Link to="/" className="logo">
-          <span className="logo-text">Dev</span>
+          <span className="logo-text">Senix</span>
           <span className="logo-dot">.</span>
         </Link>
 

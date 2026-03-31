@@ -4,9 +4,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
-import Blog from './pages/Blog';
+import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import CustomCursor from './components/CustomCursor';
+import LoadingScreen from './components/LoadingScreen';
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -30,13 +32,15 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <CustomCursor />
+        <LoadingScreen />
         <Header />
         <main className="main-content">
           <AnimatePresence mode="wait">
             <Routes>
               <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
               <Route path="/portfolio" element={<PageWrapper><Portfolio /></PageWrapper>} />
-              <Route path="/blog" element={<PageWrapper><Blog /></PageWrapper>} />
+              <Route path="/services" element={<PageWrapper><Services /></PageWrapper>} />
               <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
               <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
             </Routes>

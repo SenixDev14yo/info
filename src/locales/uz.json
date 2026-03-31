@@ -2,55 +2,96 @@
   "nav": {
     "home": "Bosh sahifa",
     "portfolio": "Portfolio",
-    "blog": "Blog",
-    "about": "Haqimda",
-    "contact": "Kontaktlar"
+    "services": "Xizmatlar",
+    "about": "Men haqimda",
+    "contact": "Aloqa"
   },
   "hero": {
-    "title": "Saytlar va botlar yarataman",
-    "subtitle": "Zamonaviy veb-ilovalar va Telegram-botlarni qulay interfeys va o'ylangan mantiq bilan ishlab chiqaman",
-    "cta": "Loyiha buyurtma qilish",
-    "viewPortfolio": "Ishlarni ko'rish"
+    "title": "Senix",
+    "subtitle": "Salom, men Azizbekman — Telegram botlari va veb-saytlar ishlab chiqarman. Avtomatizatsiya va xavfsizlikka qiziqaman va zamonaviy raqamli yechimlar yarataman.",
+    "cta": "Bog'lanish",
+    "viewPortfolio": "Ishlarim"
+  },
+  "about": {
+    "title": "Men haqimda",
+    "bio": "Men aqlli yechimlar yaratishga intiluvchi dasturchiman. Telegram botlari, veb-ishlab chiqarish va backend tizimlarida mutaxassisman. Avtomatizatsiya kuchiga ishonganman va raqamli dunyoni qulayroq qilishga intilaman.",
+    "skills": "Ko'nikmalar",
+    "telegramBots": "Telegram Botlar",
+    "telegramBotsDesc": "Biznes va shaxsiy foydalanish uchun ilg'or mantiq bilan smart botlar yaratish",
+    "webDev": "Veb Dasturlash",
+    "webDevDesc": "Zamonaviy React ilovalari va ajoyib dizaynli veb-saytlar",
+    "backend": "Backend",
+    "backendDesc": "Har qanday murakkablikdagi Node.js serverlari, API va ma'lumotlar bazalari",
+    "cybersecurity": "Kiberxavfsizlik",
+    "cybersecurityDesc": "Ma'lumotlarni himoya qilishning eng yaxshi amaliyotlarini o'rganaman va qo'llayman",
+    "contact": "Men bilan bog'lanish"
+  },
+  "services": {
+    "title": "Xizmatlar",
+    "subtitle": "Siz uchun nima qila olishim mumkin",
+    "websites": {
+      "title": "Veb-saytlar ishlab chiqarish",
+      "description": "Zamonaviy, moslashuvchan veb-saytlar bilan noyob dizayn. Landinglar, korporativ saytlar, onlayn do'konlar."
+    },
+    "telegramBots": {
+      "title": "Telegram-botlar",
+      "description": "Biznes jarayonlarini avtomatlashtirish, CRM bilan integratsiya, to'lov tizimlari, analitika va biznesingiz uchun kerak bo'lgan hamma narsa."
+    },
+    "automation": {
+      "title": "Avtomatlashtirish",
+      "description": "Oddiy vazifalarni avtomatlashtirish, ma'lumotlarni skriptlash, xabarlar, reklama va boshqa avtomatik jarayonlar."
+    },
+    "backend": {
+      "title": "Backend yechimlar",
+      "description": "Server qismini loyihalash va ishlab chiqarish, REST API, ma'lumotlar bazalari, xavfsizlik va optimizatsiya."
+    },
+    "order": "Buyurtma"
   },
   "portfolio": {
     "title": "Portfolio",
-    "filter": {
-      "all": "Hammasi",
-      "sites": "Saytlar",
-      "bots": "Botlar",
-      "design": "Dizayn"
+    "subtitle": "Mening loyihalarim",
+    "viewProject": "Ochish",
+    "darital": {
+      "title": "Darital",
+      "description": "Kriptovalyuta bilan xavfsiz savdo platformasi"
+    }
+  },
+  "stats": {
+    "projects": "Loyihalar",
+    "dedication": "Berish",
+    "availability": "Mavjudlik"
+  },
+  "testimonials": {
+    "title": "Sharhlar",
+    "subtitle": "Mijozlar nima deydi",
+    "review1": {
+      "text": "Ajoyib dasturchi! Biznesim uchun bot yaratdi — hamma narsa mukammal ishlaydi. Tavsiya qilaman!",
+      "name": "Aleksandr",
+      "role": "Biznesmen"
     },
-    "viewProject": "Loyihani ko'rish"
-  },
-  "blog": {
-    "title": "Blog",
-    "readMore": "Davomini o'qish",
-    "search": "Maqolalarni qidirish...",
-    "noResults": "Maqolalar topilmadi"
-  },
-  "about": {
-    "title": "Haqimda",
-    "bio": "Men zamonaviy veb-ilovalar yaratish tajribasiga ega frontend-dasturchiman. React, Node.js va Telegram-botlar ishlab chiqarishda ixtisoslashganman. Biznesga jarayonlarni avtomatlashtirish va mijozlar bilan muloqotni yaxshilashda yordam beraman.",
-    "skills": "Ko'nikmalar",
-    "contact": "Men bilan bog'lanish"
+    "review2": {
+      "text": "Super mutaxassis! Saytni tez va sifatli yasadi. Barcha istaklar hisobga olindi.",
+      "name": "Mariya",
+      "role": "Tadbirkor"
+    },
+    "review3": {
+      "text": "Murakkab loyiha ustida ishladim — hamma narsa o'z vaqtida va ajoyib sifatda bajarildi.",
+      "name": "Ivan",
+      "role": "CTO"
+    }
   },
   "contact": {
-    "title": "Men bilan bog'laning",
-    "subtitle": "Loyihangiz bormi? Keling, tafsilotlarni muhokama qilamiz",
+    "title": "Aloqa",
+    "subtitle": "Keling, loyihangizni muhokama qilaylik",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "email": "Email",
     "form": {
       "name": "Ismingiz",
-      "email": "Email",
-      "type": "Loyiha turi",
-      "typeOptions": {
-        "website": "Sayt",
-        "bot": "Telegram-bot",
-        "design": "Dizayn",
-        "other": "Boshqa"
-      },
       "message": "Xabar",
-      "submit": "So'rov yuborish",
+      "submit": "Yuborish",
       "sending": "Yuborilmoqda...",
-      "success": "So'rov yuborildi! Tez orada siz bilan bog'lanaman.",
+      "success": "Xabar yuborildi! Tez orada siz bilan bog'lanaman.",
       "error": "Yuborish xatosi. Keyinroq urinib ko'ring."
     }
   },

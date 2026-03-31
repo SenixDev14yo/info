@@ -2,55 +2,96 @@
   "nav": {
     "home": "Home",
     "portfolio": "Portfolio",
-    "blog": "Blog",
+    "services": "Services",
     "about": "About",
-    "contact": "Contacts"
+    "contact": "Contact"
   },
   "hero": {
-    "title": "Creating Websites and Bots",
-    "subtitle": "Developing modern web applications and Telegram bots with user-friendly interfaces and well-thought logic",
-    "cta": "Order Project",
-    "viewPortfolio": "View Works"
-  },
-  "portfolio": {
-    "title": "Portfolio",
-    "filter": {
-      "all": "All",
-      "sites": "Websites",
-      "bots": "Bots",
-      "design": "Design"
-    },
-    "viewProject": "View Project"
-  },
-  "blog": {
-    "title": "Blog",
-    "readMore": "Read more",
-    "search": "Search articles...",
-    "noResults": "No articles found"
+    "title": "Senix",
+    "subtitle": "Hi, I'm Azizbek — Telegram bot developer and web developer. I'm into automation, security and creating modern digital solutions.",
+    "cta": "Contact Me",
+    "viewPortfolio": "My Works"
   },
   "about": {
     "title": "About Me",
-    "bio": "I'm a frontend developer with experience in creating modern web applications. I specialize in React, Node.js and Telegram bot development. I help businesses automate processes and improve customer interactions.",
+    "bio": "I'm a developer with a passion for creating smart solutions. I specialize in Telegram bots, web development and backend systems. I believe in the power of automation and strive to make the digital world more convenient.",
     "skills": "Skills",
+    "telegramBots": "Telegram Bots",
+    "telegramBotsDesc": "Creating smart bots for business and personal use with advanced logic",
+    "webDev": "Web Development",
+    "webDevDesc": "Modern React apps and websites with killer design",
+    "backend": "Backend",
+    "backendDesc": "Node.js servers, APIs and databases of any complexity",
+    "cybersecurity": "Cybersecurity",
+    "cybersecurityDesc": "Learning and applying best data protection practices",
     "contact": "Contact Me"
   },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I can do for you",
+    "websites": {
+      "title": "Website Development",
+      "description": "Modern, responsive websites with unique design. Landing pages, corporate sites, online stores."
+    },
+    "telegramBots": {
+      "title": "Telegram Bots",
+      "description": "Business process automation, CRM integrations, payment systems, analytics and everything your business needs."
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "Automating routine tasks, data parsing, notifications, mailing and other automated processes."
+    },
+    "backend": {
+      "title": "Backend Solutions",
+      "description": "Designing and developing server side, REST API, databases, security and optimization."
+    },
+    "order": "Order"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "My Projects",
+    "viewProject": "Open",
+    "darital": {
+      "title": "Darital",
+      "description": "Platform for secure cryptocurrency transactions"
+    }
+  },
+  "stats": {
+    "projects": "Projects",
+    "dedication": "Dedication",
+    "availability": "Availability"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What clients say",
+    "review1": {
+      "text": "Great developer! Made a bot for my business — everything works perfectly. Highly recommend!",
+      "name": "Alexander",
+      "role": "Businessman"
+    },
+    "review2": {
+      "text": "Super professional! Made the website quickly and quality. All wishes were taken into account.",
+      "name": "Maria",
+      "role": "Entrepreneur"
+    },
+    "review3": {
+      "text": "Worked on a complex project — everything was done on time and with excellent quality.",
+      "name": "Ivan",
+      "role": "CTO"
+    }
+  },
   "contact": {
-    "title": "Contact Me",
-    "subtitle": "Have a project? Let's discuss the details",
+    "title": "Contacts",
+    "subtitle": "Let's discuss your project",
+    "telegram": "Telegram",
+    "instagram": "Instagram",
+    "email": "Email",
     "form": {
       "name": "Your name",
-      "email": "Email",
-      "type": "Project type",
-      "typeOptions": {
-        "website": "Website",
-        "bot": "Telegram Bot",
-        "design": "Design",
-        "other": "Other"
-      },
       "message": "Message",
-      "submit": "Send Request",
+      "submit": "Send",
       "sending": "Sending...",
-      "success": "Request sent! I'll contact you soon.",
+      "success": "Message sent! I'll contact you soon.",
       "error": "Send error. Try again later."
     }
   },
