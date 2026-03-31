@@ -2,7 +2,7 @@ import cors from 'cors';
 
 const corsMiddleware = cors();
 
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8252274161:AAGgK4angtBTy5Oqh0r2N5AKwUYPHX3_uYw';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8252274161:AAEvCbtMkn5WaOb3eLYpGoTmTydyFKuo18Q';
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '719579828';
 
 export default async function handler(req, res) {
