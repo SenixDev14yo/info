@@ -44,7 +44,7 @@ const Home = () => {
           <motion.h1 className="hero-title" variants={itemVariants}>
             <span className="gradient-text">{t('hero.title')}</span>
             <br />
-            <span style={{ fontSize: '24px', color: 'rgba(255,255,255,0.6)' }}>
+            <span className="hero-subtitle-text">
               Developer & Security Enthusiast
             </span>
           </motion.h1>
