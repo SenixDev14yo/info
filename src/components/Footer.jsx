@@ -22,7 +22,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-content">
         <div className="footer-logo">
-          <span className="logo-text">Senix</span>
+          <span className="logo-text">Aziz</span>
           <span className="logo-dot">.</span>
         </div>
 
@@ -52,7 +52,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <p className="copyright">© 2024 Senix. {t('footer.rights')}</p>
+        <p className="copyright">© 2024 Aziz. {t('footer.rights')}</p>
       </div>
     </footer>
   );

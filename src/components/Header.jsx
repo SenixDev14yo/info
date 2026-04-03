@@ -28,7 +28,7 @@ const Header = () => {
     <header className="header">
       <div className="container header-content">
         <Link to="/" className="logo">
-          <span className="logo-text">Senix</span>
+          <span className="logo-text">Aziz</span>
           <span className="logo-dot">.</span>
         </Link>
 
