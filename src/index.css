@@ -287,32 +287,34 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--accent);
 }
 
-/* Custom Cursor */
-.custom-cursor {
+/* Minimal Custom Cursor */
+.minimal-cursor {
   position: fixed;
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   background: var(--primary);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  transition: transform 0.15s ease;
+  transform: translate(-50%, -50%);
   mix-blend-mode: difference;
+  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+  left: 0;
+  top: 0;
 }
 
-.custom-cursor.hovered {
-  transform: scale(3);
+.minimal-cursor.hovered {
+  width: 16px;
+  height: 16px;
   background: var(--accent);
 }
 
+.custom-cursor {
+  display: none;
+}
+
 .cursor-dot {
-  position: fixed;
-  width: 4px;
-  height: 4px;
-  background: var(--primary);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
+  display: none;
 }
 
 /* Header */

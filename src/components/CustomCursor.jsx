@@ -1,11 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+  const dotRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const updatePosition = (e) => {
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      }
       setPosition({ x: e.clientX, y: e.clientY });
     };
 
@@ -27,22 +31,10 @@ const CustomCursor = () => {
   }, []);
 
   return (
-    <>
-      <div
-        className={`custom-cursor ${isHovered ? 'hovered' : ''}`}
-        style={{
-          left: position.x - 10,
-          top: position.y - 10,
-        }}
-      />
-      <div
-        className="cursor-dot"
-        style={{
-          left: position.x - 4,
-          top: position.y - 4,
-        }}
-      />
-    </>
+    <div
+      ref={dotRef}
+      className={`minimal-cursor ${isHovered ? 'hovered' : ''}`}
+    />
   );
 };
 
