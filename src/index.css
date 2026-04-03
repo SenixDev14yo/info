@@ -430,7 +430,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .lang-btn:hover:not(.active) {
-  color: var(--text);
+  color: var(--primary);
+  box-shadow: 0 0 15px var(--primary-glow);
+  background: var(--surface-hover);
+}
+
+.lang-btn:active:not(.active) {
+  transform: scale(0.95);
 }
 
 .header-actions {
@@ -457,6 +463,11 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--surface-hover);
   color: var(--primary);
   border-color: var(--primary);
+  box-shadow: 0 0 20px var(--primary-glow);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
 }
 
 .theme-toggle-mobile {
