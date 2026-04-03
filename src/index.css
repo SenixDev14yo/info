@@ -67,6 +67,22 @@
   background: rgba(250, 251, 252, 0.95);
 }
 
+[data-theme="light"] .nav-link-mobile {
+  color: var(--text-secondary);
+  border-bottom-color: var(--border);
+}
+
+[data-theme="light"] .theme-toggle-mobile {
+  background: rgba(115, 83, 186, 0.08);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="light"] .theme-toggle-mobile:hover {
+  background: rgba(115, 83, 186, 0.15);
+  border-color: var(--primary);
+}
+
 [data-theme="light"] .contact-item {
   background: var(--surface);
 }
@@ -417,6 +433,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link-mobile:hover {
   color: var(--primary);
+}
+
+.lang-switcher-mobile {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.lang-btn-mobile {
+  flex: 1;
+  padding: 10px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 13px;
+  cursor: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.lang-btn-mobile.active {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-color: transparent;
+}
+
+.lang-btn-mobile:hover:not(.active) {
+  background: var(--surface-hover);
+  border-color: var(--primary);
 }
 
 .main-content {
