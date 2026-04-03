@@ -42,7 +42,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
             >
               <div className="avatar">
-                <img src="/icon.jpg" alt="Aziz" />
+                <img src="/icon.jpg" alt="Азизбек" />
               </div>
               <div className="social-links-about">
                 {socialLinks.map((social, index) => (
