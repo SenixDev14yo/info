@@ -33,7 +33,7 @@ const LoadingScreen = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="loading-logo gradient-text">Азизбек</div>
+            <div className="loading-logo gradient-text">???</div>
             <div className="loading-bar">
               <motion.div
                 className="loading-progress"
