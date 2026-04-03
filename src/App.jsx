@@ -32,6 +32,7 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <div className="scanline"></div>
         <CustomCursor />
         <LoadingScreen />
         <Header />
